@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+uv.lock
+
+# Environment
+.env
+
+# Data
+.eval/
