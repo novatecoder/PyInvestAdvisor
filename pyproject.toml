@@ -2,7 +2,9 @@
 name = "pyinverstadvisor"
 version = "0.1"
 description = "This system is an AI chatbot that analyzes a user's investment profile to recommend a personalized financial portfolio. Leveraging natural language processing, it is designed to allow anyone to easily ask investment-related questions and receive real-time financial information."
-authors = ["novatecoder <novatecoder@google.com>"] # authors 표기법 변경
+authors = [
+    { name = "wonhyeok kim", email = "novatecoder@gmail.com" }
+]
 license = "Apache License 2.0"
 readme = "README.md"
 package-mode = false

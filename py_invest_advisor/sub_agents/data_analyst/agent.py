@@ -22,8 +22,13 @@ from google.adk.tools.agent_tool import AgentTool
 
 from . import prompt
 
+import os
+
+DATA_ANALYST_MODEL=os.environ['REASONING_MODEL']
+
+# MODEL = "gemini-2.5-flash"
+
 MODEL = "gemini-2.5-flash"
-DATA_ANALYST_MODEL = "gemini-2.5-pro"
 
 # data_analyst_agent = Agent(
 #     model=MODEL,
@@ -38,7 +43,7 @@ kis_agent = Agent(
     name="kis_agent",
     instruction=prompt.KIS_AGENT_PROMPT,
     output_key="kis_data_output",
-    tools=[get_current_date, mcp_tools], # KIS API 도구 세트
+    tools=[get_current_date, mcp_tools],
 )
 
 google_search_agent = Agent(

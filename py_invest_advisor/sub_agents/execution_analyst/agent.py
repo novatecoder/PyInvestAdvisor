@@ -18,7 +18,14 @@ from google.adk import Agent
 
 from . import prompt
 
-MODEL = "gemini-2.5-pro"
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+MODEL=os.environ['REASONING_MODEL']
+
+# MODEL = "gemini-2.5-flash"
 
 execution_analyst_agent = Agent(
     model=MODEL,
